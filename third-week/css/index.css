@@ -69,6 +69,10 @@ a {
   box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
+.border-b {
+  border-bottom: 1px solid #E1E1E1;
+}
+
 /*header*/
 header {
   background-color: black;
@@ -112,17 +116,31 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 }
 
 .title-dateBox {
-  color: #757575;
+  color: #9B9B9B;
 }
 
 .title-dateBox #dropdownMenuButton {
   background-color: rgba(255, 255, 255, 0);
-  color: #757575;
+  color: #9B9B9B;
 }
 
 .title-dateBox .dropdown-menu {
   min-width: 1rem;
-  left: -25% !important;
+  left: -50% !important;
+  padding: 0;
+}
+
+.title-dateBox .dropdown-menu .dropdown-item {
+  padding: 1rem 2.25rem;
+}
+
+.title-dateBox .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.title-dateBox .dropdown-toggle::after {
+  color: #000;
 }
 
 /*block1*/
@@ -157,6 +175,78 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 
 /*block3*/
 .transaction-box {
-  padding: 1.8rem 2rem;
+  padding: 1.6rem 2rem 0 2rem;
+}
+
+.transaction-box > .col {
+  padding: 1.6rem 0;
+}
+
+.transaction-box > .col i {
+  width: 15%;
+}
+
+.transaction-box > .col .web-url {
+  width: 40%;
+  font-weight: 700;
+  color: #9B9B9B;
+}
+
+.transaction-box > .col .web-client {
+  width: 29%;
+  padding-right: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.transaction-box > .col .web-percent {
+  width: 16%;
+}
+
+.transaction-box .shopify::before {
+  content: url("../img/shopify.png");
+  width: 50px;
+  height: 50px;
+}
+
+.orders-box {
+  padding: 1.6rem 2rem 0 2rem;
+}
+
+.orders-box > .col {
+  padding: 0.6rem 0;
+}
+
+.orders-box > .col .pic {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.orders-box > .col .info {
+  width: calc(100% - 100px);
+  padding: 0.5rem 1.25rem;
+}
+
+.orders-box > .col .info h3 {
+  font-size: 1.25rem;
+}
+
+.orders-box > .col .info p {
+  color: #757575;
+}
+
+.orders-box > .col .info p span {
+  color: #9B9B9B;
+}
+
+.orders-box > .col .info p .fa-male {
+  margin-left: 2px;
+}
+
+.orders-box > .col .info p .totalNumber {
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=index.css.map */

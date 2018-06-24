@@ -49,7 +49,8 @@ $green:#7ED321;
 $grey1:#F2F2F2;
 $grey2:#E1E1E1;
 $grey3:#C8C8C8;
-$grey4:#757575;
+$grey4:#9B9B9B ;
+$grey5:#757575;
 
 .green{
     color: $green;
@@ -65,6 +66,9 @@ $grey4:#757575;
     background-color: #fff;
     border-radius: 2px;
     box-shadow: 0px 0px 10px 5px rgb(223, 223, 223);
+}
+.border-b{
+    border-bottom: 1px solid $grey2;
 }
 /*header*/
 header{
@@ -110,7 +114,18 @@ header{
     }
     .dropdown-menu{
         min-width: 1rem;
-        left: -25% !important;
+        left: -50% !important;
+        padding: 0;
+        .dropdown-item{
+            padding: 1rem 2.25rem;
+        }
+        .dropdown-item:hover{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .dropdown-toggle::after{
+        color: #000;
     }
 } 
 /*block1*/ 
@@ -141,5 +156,62 @@ header{
 } 
 /*block3*/
 .transaction-box{
-    padding: 1.8rem 2rem;
+    padding: 1.6rem 2rem 0 2rem;
+    > .col{
+        padding: 1.6rem 0;
+        i{
+            width: 15%;
+        }
+        .web-url{
+            width: 40%;
+            font-weight: 700;
+            color: $grey4;
+        }
+        .web-client{
+            width: 29%;
+            padding-right:2rem; 
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-align: right;
+        }
+        .web-percent{
+            width: 16%;
+        }
+    }
+    .shopify::before{
+        content:  url('../img/shopify.png');
+        width: 50px;
+        height: 50px;
+    }
+}
+.orders-box{
+    padding: 1.6rem 2rem 0 2rem;
+    > .col{
+        padding: 0.6rem 0;
+        .pic{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .info{
+            width: calc(100% - 100px);
+            padding: 0.5rem 1.25rem;
+            h3{
+                font-size: 1.25rem;
+            }
+            p{
+                color: $grey5;
+                span{
+                    color: $grey4;
+                }
+                .fa-male{
+                    margin-left: 2px;
+                }
+                .totalNumber{
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
 }

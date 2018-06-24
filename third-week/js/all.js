@@ -4,21 +4,29 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['6 JUN',  1000,400],
-          ['7 JUN',  1170,460],
-          ['8 JUN',  660,1120],
-          ['9 JUN',  1030,540],
-          ['10 JUN',  1330,740],
-          ['11 JUN',  1080,640],
-          ['12 JUN',  800,840],
-          ['13 JUN',  630,940]
+          ['Year', 'Revenue', 'Cost', 'Income'],
+          ['6 JUNE',  7300,    600,    6100],
+          ['7 JUNE',  7000,    600,    5400],
+          ['8 JUNE',  5500,    3700,   1900],
+          ['9 JUNE',  8800,    3000,   4000],
+          ['10 JUNE', 5900,    2400,   3800],
+          ['11 JUNE', 6200,    500,    5300],
+          ['12 JUNE', 8000,    900,    6500],
+          ['13 JUNE', 7300,    2000,   4900]
         ]);
 
         var options = {
-          legend: { position: 'bottom' }
+          legend: 'none',
+          series: {
+            0: { color: '#7ED321' },
+            1: { color: '#D0021B' },
+            2: { color: '#4A90E2' },
+            },
+          animation:{
+            duration: 1000,
+            easing: 'out'
+          }
         };
-
         var chart = new google.visualization.LineChart(document.getElementById('chart'));
 
         chart.draw(data, options);
