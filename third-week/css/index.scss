@@ -50,6 +50,22 @@ $grey1:#F2F2F2;
 $grey2:#E1E1E1;
 $grey3:#C8C8C8;
 $grey4:#757575;
+
+.green{
+    color: $green;
+}
+.red{
+    color: $red;
+}
+.blue{
+    color: $blue;
+}
+
+.panel{
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 5px rgb(223, 223, 223);
+}
 /*header*/
 header{
     background-color: black;
@@ -97,3 +113,33 @@ header{
         left: -25% !important;
     }
 } 
+/*block1*/ 
+.block1 {
+    .infoBox{
+        padding: 1.9rem 0;
+        font-weight: 700;    
+    }
+    .infoBox-title{
+        text-align: center;
+        i::before{
+            font-size: 1.4rem;
+        }
+    }
+    .infoBox-number{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+/*block2*/
+.block2{
+    padding: 1.8rem 2rem;
+    .chart-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0 2.5rem;
+    }
+} 
+/*block3*/
+.transaction-box{
+    padding: 1.8rem 2rem;
+}
