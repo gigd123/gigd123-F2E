@@ -1,0 +1,99 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*{
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    letter-spacing: 1px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+/*顏色*/ 
+$red:#D0021B;
+$orange:#F5A623;
+$blue:#4A90E2;
+$green:#7ED321;
+$grey1:#F2F2F2;
+$grey2:#E1E1E1;
+$grey3:#C8C8C8;
+$grey4:#757575;
+/*header*/
+header{
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    .navbar{
+        align-items: unset;
+        h1{
+            margin-right:60px;
+            a{
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }      
+    } 
+    .navbar-expand-lg .navbar-nav .nav-link{
+        color: $grey3;
+        padding:1.5rem 1rem;
+        border-bottom: 3px solid #000;
+        transition: all 0.5s;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover{
+        color: #fff;
+        border-bottom: 3px solid #fff;
+    }
+} 
+/*main*/
+.main{
+    background-color: $grey1;
+} 
+/*title*/
+.title{
+    h2{
+        font-size: 1.5rem;
+    }
+}
+.title-dateBox{
+    color:$grey4;
+    #dropdownMenuButton{
+        background-color: rgba(255, 255, 255, 0);
+        color:$grey4;
+    }
+    .dropdown-menu{
+        min-width: 1rem;
+        left: -25% !important;
+    }
+} 
