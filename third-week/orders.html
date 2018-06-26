@@ -24,9 +24,88 @@
                         <i class="fas fa-sort-down text-dark"></i>
                     </a>
                     <i class="fas fa-tags fa-xs"></i>
+                    <ul class="state-select-dropdown">
+                        <li>
+                            <a href="#">Select All</a>
+                        </li>
+                        <li>
+                            <a href="#">Unselect All</a>
+                        </li>
+                        <li>
+                            <a href="#">Paid</a>
+                        </li>
+                        <li>
+                            <a href="#">Unpaid</a>
+                        </li>
+                        <li>
+                            <a href="#">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#">Done</a>
+                        </li>
+                    </ul>
                 </span>
-
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Weekly
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Daily</a>
+                        <a class="dropdown-item" href="#">Weekly</a>
+                        <a class="dropdown-item" href="#">Monthly</a>
+                        <a class="dropdown-item" href="#">Yearly</a>
+                        <a class="dropdown-item" href="#">Custom</a>
+                    </div>
+                </div>
             </div>
+            <table class="order-table">
+                <thead>
+                    <tr class="bg-white font-weight-bold">
+                        <th width="15%"> Customer</th>
+                        <th>Product List</th>
+                        <th width="5%">Total</th>
+                        <th>Add to Cart</th>
+                        <th>Check-out</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="td-customer"><input class="td-checkbox" type="checkbox" name="" id=""> Ian Medina</td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p class="mb-2">Vestibulum.</p>
+                                <p class="mb-3 d-flex justify-content-between"><span class="product-money">$1,400</span><span>1</span></p>
+                            </div>
+                            <div class="product-list border-bottom">
+                                <p class="mb-2">Vestibulum.</p>
+                                <p class="mb-3 d-flex justify-content-between"><span class="product-money">$1,400</span><span>1</span></p>
+                            </div>
+                        </td>
+                        <td>$2,200</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>386 Windler Drives
+                            <br> Apt. 358</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>

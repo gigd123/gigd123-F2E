@@ -25,6 +25,9 @@ $grey5:#757575;
     border-radius: 2px;
     box-shadow: 0px 0px 10px 5px rgb(223, 223, 223);
 }
-@mixin border-b{
+@mixin border-b-g{
     border-bottom: 1px solid $grey2;
+}
+@mixin border-b-w{
+    border-bottom: 1px solid #fff;
 }

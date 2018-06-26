@@ -3,17 +3,24 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-* {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -48,6 +55,14 @@ table {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 /*顏色*/
@@ -256,31 +271,109 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 }
 
 /*orders.html start*/
-.state-select input {
+/*selectBar*/
+.selecBar .state-select {
+  position: relative;
+}
+
+.selecBar .state-select input {
   width: 15px;
   height: 15px;
 }
 
-.state-select a .fa-sort-down {
+.selecBar .state-select a .fa-sort-down {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.state-select a .fa-sort-down::before {
+.selecBar .state-select a .fa-sort-down::before {
   position: absolute;
   top: 2px;
 }
 
-.state-select .fa-tags {
+.selecBar .state-select .fa-tags {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.state-select .fa-tags::before {
+.selecBar .state-select .fa-tags::before {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
+}
+
+.selecBar .state-select .state-select-dropdown {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.selecBar .state-select .state-select-dropdown li a {
+  background-color: #fff;
+  display: block;
+  height: 36px;
+  width: 125px;
+  text-align: center;
+  line-height: 36px;
+  color: #000;
+}
+
+.selecBar .state-select .state-select-dropdown li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.selecBar .state-select:hover .state-select-dropdown {
+  max-height: 600px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
+}
+
+.selecBar #dropdownMenuButton {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.selecBar .dropdown-menu {
+  min-width: 1rem;
+  left: -50% !important;
+  padding: 0;
+}
+
+.selecBar .dropdown-menu .dropdown-item {
+  padding: 1rem 2.25rem;
+}
+
+.selecBar .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.selecBar .dropdown-toggle::after {
+  color: #000;
+}
+
+/*order-table*/
+.order-table tr th, .order-table tr td {
+  padding: 0.7rem 1.5rem;
+}
+
+.order-table tr th .product-money, .order-table tr td .product-money {
+  color: #9B9B9B;
+}
+
+.order-table tr .td-customer {
+  position: relative;
+}
+
+.order-table tr .td-customer .td-checkbox {
+  position: absolute;
+  left: 10px;
+  top: 14px;
 }
 /*# sourceMappingURL=all.css.map */
