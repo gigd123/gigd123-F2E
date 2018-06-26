@@ -1,0 +1,196 @@
+@import"reset";
+@import"panel";
+/*header*/
+
+header {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    .navbar {
+        align-items: unset;
+        h1 {
+            margin-right: 60px;
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        color: $grey3;
+        padding: 1.5rem 1rem;
+        border-bottom: 3px solid #000;
+        transition: all 0.5s;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: #fff;
+        border-bottom: 3px solid #fff;
+    }
+}
+
+/*index.html start*/
+
+/*main*/
+
+.main {
+    background-color: $grey1;
+}
+
+/*title*/
+
+.title {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.title-dateBox {
+    color: $grey4;
+    #dropdownMenuButton {
+        background-color: rgba(255, 255, 255, 0);
+        color: $grey4;
+    }
+    .dropdown-menu {
+        min-width: 1rem;
+        left: -50% !important;
+        padding: 0;
+        .dropdown-item {
+            padding: 1rem 2.25rem;
+        }
+        .dropdown-item:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+    .dropdown-toggle::after {
+        color: #000;
+    }
+}
+
+/*block1*/
+
+.block1 {
+    .infoBox {
+        padding: 1.9rem 0;
+        font-weight: 700;
+        @include panel;
+    }
+    .infoBox-title {
+        text-align: center;
+        i::before {
+            font-size: 1.4rem;
+        }
+    }
+    .infoBox-number {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+}
+
+/*block2*/
+
+.block2 {
+    padding: 1.8rem 2rem;
+    @include panel;
+    .chart-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0 2.5rem;
+    }
+}
+
+/*block3*/
+
+.transaction-box {
+    padding: 1.6rem 2rem 0 2rem;
+    @include panel;
+    >.col {
+        padding: 1.6rem 0;
+        @include border-b;
+        i {
+            width: 15%;
+        }
+        .web-url {
+            width: 40%;
+            font-weight: 700;
+            color: $grey4;
+        }
+        .web-client {
+            width: 29%;
+            padding-right: 2rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-align: right;
+        }
+        .web-percent {
+            width: 16%;
+        }
+    }
+    .shopify::before {
+        content: url('../img/shopify.png');
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.orders-box {
+    padding: 1.6rem 2rem 0 2rem;
+    @include panel;
+    >.col {
+        padding: 0.6rem 0;
+        @include border-b;
+        .pic {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .info {
+            width: calc(100% - 100px);
+            padding: 0.5rem 1.25rem;
+            h3 {
+                font-size: 1.25rem;
+            }
+            p {
+                color: $grey5;
+                span {
+                    color: $grey4;
+                }
+                .fa-male {
+                    margin-left: 2px;
+                }
+                .totalNumber {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+/*orders.html start*/
+
+.state-select input {
+    width: 15px;
+    height: 15px;
+}
+
+.state-select a .fa-sort-down {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.state-select a .fa-sort-down::before {
+    position: absolute;
+    top: 2px;
+}
+.state-select .fa-tags{
+    position: relative;
+    width: 20px;
+    height: 20px; 
+}
+.state-select .fa-tags::before {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}

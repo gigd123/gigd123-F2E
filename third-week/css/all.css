@@ -63,16 +63,6 @@ a {
   color: #4A90E2;
 }
 
-.panel {
-  background-color: #fff;
-  border-radius: 2px;
-  box-shadow: 0px 0px 10px 5px #dfdfdf;
-}
-
-.border-b {
-  border-bottom: 1px solid #E1E1E1;
-}
-
 /*header*/
 header {
   background-color: black;
@@ -105,6 +95,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   border-bottom: 3px solid #fff;
 }
 
+/*index.html start*/
 /*main*/
 .main {
   background-color: #F2F2F2;
@@ -147,6 +138,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .block1 .infoBox {
   padding: 1.9rem 0;
   font-weight: 700;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
 .block1 .infoBox-title {
@@ -165,6 +159,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 /*block2*/
 .block2 {
   padding: 1.8rem 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
 .block2 .chart-title {
@@ -176,10 +173,14 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 /*block3*/
 .transaction-box {
   padding: 1.6rem 2rem 0 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
 .transaction-box > .col {
   padding: 1.6rem 0;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 .transaction-box > .col i {
@@ -212,10 +213,14 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 
 .orders-box {
   padding: 1.6rem 2rem 0 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
 .orders-box > .col {
   padding: 0.6rem 0;
+  border-bottom: 1px solid #E1E1E1;
 }
 
 .orders-box > .col .pic {
@@ -249,4 +254,33 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   font-size: 1.25rem;
   font-weight: 700;
 }
-/*# sourceMappingURL=index.css.map */
+
+/*orders.html start*/
+.state-select input {
+  width: 15px;
+  height: 15px;
+}
+
+.state-select a .fa-sort-down {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.state-select a .fa-sort-down::before {
+  position: absolute;
+  top: 2px;
+}
+
+.state-select .fa-tags {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.state-select .fa-tags::before {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+/*# sourceMappingURL=all.css.map */
