@@ -61,10 +61,6 @@ a:hover {
   text-decoration: none;
 }
 
-button {
-  border: none;
-}
-
 /*顏色*/
 .green {
   color: #7ED321;
@@ -76,6 +72,22 @@ button {
 
 .blue {
   color: #4A90E2;
+}
+
+.bg-grey {
+  background-color: #EBEBEB;
+}
+
+.bg-green {
+  background-color: #7ED321;
+}
+
+.bg-blue {
+  background-color: #4A90E2;
+}
+
+.bg-orange {
+  background-color: #F5A623;
 }
 
 /*header*/
@@ -272,46 +284,51 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 
 /*orders.html start*/
 /*selectBar*/
-.selecBar .state-select {
+.orders {
+  /*order-table*/
+}
+
+.orders .selecBar .state-select {
   position: relative;
 }
 
-.selecBar .state-select input {
+.orders .selecBar .state-select input {
   width: 15px;
   height: 15px;
 }
 
-.selecBar .state-select a .fa-sort-down {
+.orders .selecBar .state-select a .fa-sort-down {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.selecBar .state-select a .fa-sort-down::before {
+.orders .selecBar .state-select a .fa-sort-down::before {
   position: absolute;
   top: 2px;
 }
 
-.selecBar .state-select .fa-tags {
+.orders .selecBar .state-select .fa-tags {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.selecBar .state-select .fa-tags::before {
+.orders .selecBar .state-select .fa-tags::before {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
 }
 
-.selecBar .state-select .state-select-dropdown {
+.orders .selecBar .state-select .state-select-dropdown {
   position: absolute;
   max-height: 0;
   overflow: hidden;
   transition: all 1s;
+  z-index: 2;
 }
 
-.selecBar .state-select .state-select-dropdown li a {
+.orders .selecBar .state-select .state-select-dropdown li a {
   background-color: #fff;
   display: block;
   height: 36px;
@@ -321,59 +338,243 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #000;
 }
 
-.selecBar .state-select .state-select-dropdown li a:hover {
+.orders .selecBar .state-select .state-select-dropdown li a:hover {
   background-color: #000;
   color: #fff;
 }
 
-.selecBar .state-select:hover .state-select-dropdown {
+.orders .selecBar .state-select:hover .state-select-dropdown {
   max-height: 600px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
-.selecBar #dropdownMenuButton {
+.orders .selecBar #dropdownMenuButton {
   background-color: rgba(255, 255, 255, 0);
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.selecBar .dropdown-menu {
+.orders .selecBar .dropdown-menu {
   min-width: 1rem;
   left: -50% !important;
   padding: 0;
 }
 
-.selecBar .dropdown-menu .dropdown-item {
+.orders .selecBar .dropdown-menu .dropdown-item {
   padding: 1rem 2.25rem;
 }
 
-.selecBar .dropdown-menu .dropdown-item:hover {
+.orders .selecBar .dropdown-menu .dropdown-item:hover {
   background-color: #000;
   color: #fff;
 }
 
-.selecBar .dropdown-toggle::after {
+.orders .selecBar .dropdown-toggle::after {
   color: #000;
 }
 
-/*order-table*/
-.order-table tr th, .order-table tr td {
+.orders .order-table tr th, .orders .order-table tr td {
   padding: 0.7rem 1.5rem;
+  line-height: 1.5;
 }
 
-.order-table tr th .product-money, .order-table tr td .product-money {
+.orders .order-table tr th .product-money, .orders .order-table tr td .product-money {
   color: #9B9B9B;
 }
 
-.order-table tr .td-customer {
+.orders .order-table tr th #dropdownMenuButton, .orders .order-table tr td #dropdownMenuButton {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.orders .order-table tr th .dropdown-menu, .orders .order-table tr td .dropdown-menu {
+  min-width: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.orders .order-table tr th .dropdown-menu .dropdown-item, .orders .order-table tr td .dropdown-menu .dropdown-item {
+  padding: 0.5rem 2rem;
+  color: #000;
+}
+
+.orders .order-table tr th .dropdown-menu .dropdown-item:hover, .orders .order-table tr td .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.orders .order-table tr th .dropdown-toggle::after, .orders .order-table tr td .dropdown-toggle::after {
+  color: white;
+}
+
+.orders .order-table tr .td-customer {
   position: relative;
 }
 
-.order-table tr .td-customer .td-checkbox {
+.orders .order-table tr .td-customer .td-checkbox {
   position: absolute;
   left: 10px;
-  top: 14px;
+  top: 22px;
+}
+
+.orders nav ul li .page-link {
+  color: #000;
+}
+
+.orders nav ul li .page-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/*order.html end*/
+/*product.html start*/
+/*selectBar*/
+.orders {
+  /*order-table*/
+}
+
+.orders .selecBar .state-select {
+  position: relative;
+}
+
+.orders .selecBar .state-select input {
+  width: 15px;
+  height: 15px;
+}
+
+.orders .selecBar .state-select a .fa-sort-down {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.orders .selecBar .state-select a .fa-sort-down::before {
+  position: absolute;
+  top: 2px;
+}
+
+.orders .selecBar .state-select .fa-tags {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.orders .selecBar .state-select .fa-tags::before {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.orders .selecBar .state-select .state-select-dropdown {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 2;
+}
+
+.orders .selecBar .state-select .state-select-dropdown li a {
+  background-color: #fff;
+  display: block;
+  height: 36px;
+  width: 125px;
+  text-align: center;
+  line-height: 36px;
+  color: #000;
+}
+
+.orders .selecBar .state-select .state-select-dropdown li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.orders .selecBar .state-select:hover .state-select-dropdown {
+  max-height: 600px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 5px #dfdfdf;
+}
+
+.orders .selecBar #dropdownMenuButton {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.orders .selecBar .dropdown-menu {
+  min-width: 1rem;
+  left: -50% !important;
+  padding: 0;
+}
+
+.orders .selecBar .dropdown-menu .dropdown-item {
+  padding: 1rem 2.25rem;
+}
+
+.orders .selecBar .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.orders .selecBar .dropdown-toggle::after {
+  display: none;
+}
+
+.orders .order-table tr th, .orders .order-table tr td {
+  padding: 0.7rem 1.5rem;
+  line-height: 1.5;
+}
+
+.orders .order-table tr th .product-money, .orders .order-table tr td .product-money {
+  color: #9B9B9B;
+}
+
+.orders .order-table tr th #dropdownMenuButton, .orders .order-table tr td #dropdownMenuButton {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.orders .order-table tr th .dropdown-menu, .orders .order-table tr td .dropdown-menu {
+  min-width: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.orders .order-table tr th .dropdown-menu .dropdown-item, .orders .order-table tr td .dropdown-menu .dropdown-item {
+  padding: 0.5rem 2rem;
+  color: #000;
+}
+
+.orders .order-table tr th .dropdown-menu .dropdown-item:hover, .orders .order-table tr td .dropdown-menu .dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.orders .order-table tr th .dropdown-toggle::after, .orders .order-table tr td .dropdown-toggle::after {
+  color: white;
+}
+
+.orders .order-table tr .td-customer {
+  position: relative;
+}
+
+.orders .order-table tr .td-customer .td-checkbox {
+  position: absolute;
+  left: 10px;
+  top: 22px;
+}
+
+.orders nav ul li .page-link {
+  color: #000;
+}
+
+.orders nav ul li .page-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 /*# sourceMappingURL=all.css.map */

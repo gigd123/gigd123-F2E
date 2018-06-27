@@ -1,4 +1,8 @@
+// aos
 
+AOS.init();
+
+// google chart
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -31,3 +35,37 @@
 
         chart.draw(data, options);
       }
+
+
+    /*ajax換頁*/
+loadDoc1();
+function loadDoc1() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.querySelector('.main').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "home.html", true);
+  xhttp.send();
+}
+function loadDoc2() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.querySelector('.main').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "orders.html", true);
+  xhttp.send();
+}
+function loadDoc3() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.querySelector('.main').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "product.html", true);
+  xhttp.send();
+}

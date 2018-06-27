@@ -1,23 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/all.css">
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-</head>
 
-<body>
-    <div class="main pt-5 pb-5">
-        <div class="container">
-            <div class="selecBar d-flex justify-content-between">
+        <div class=" orders container" data-aos="fade-left">
+            <div class="selecBar d-flex justify-content-between mb-3 pl-2">
                 <span class="state-select">
                     <input type="checkbox" name="vehicle" value="Bike">
                     <a href="#">
@@ -58,10 +42,10 @@
                     </div>
                 </div>
             </div>
-            <table class="order-table">
+            <table class="order-table mb-4">
                 <thead>
                     <tr class="bg-white font-weight-bold">
-                        <th width="15%"> Customer</th>
+                        <th width="18%"> Customer</th>
                         <th>Product List</th>
                         <th width="5%">Total</th>
                         <th>Add to Cart</th>
@@ -72,15 +56,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="td-customer"><input class="td-checkbox" type="checkbox" name="" id=""> Ian Medina</td>
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id=""> Ian Medina</td>
                         <td>
                             <div class="product-list border-bottom border-white">
-                                <p class="mb-2">Vestibulum.</p>
-                                <p class="mb-3 d-flex justify-content-between"><span class="product-money">$1,400</span><span>1</span></p>
+                                <p>Vestibulum.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
                             </div>
-                            <div class="product-list border-bottom">
-                                <p class="mb-2">Vestibulum.</p>
-                                <p class="mb-3 d-flex justify-content-between"><span class="product-money">$1,400</span><span>1</span></p>
+                            <div class="product-list">
+                                <p>Vestibulum.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
                             </div>
                         </td>
                         <td>$2,200</td>
@@ -90,24 +81,260 @@
                             <br>13:39</td>
                         <td>386 Windler Drives
                             <br> Apt. 358</td>
-                        <td></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-green dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    PAID
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-grey">
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id="">Manuel Stephens</td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p>Donec facili.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>$1,400</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>531 Orval Mission
+                            <br>Suite 134</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-green dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    PAID
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id="">Daisy Reynolds</td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p>Curabitur lo.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                            <div class="product-list border-bottom border-white">
+                                <p>Donec facili.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$800</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                            <div class="product-list">
+                                <p>Nam porttito.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$800</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>$3,000</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>38 Juston Islands
+                            <br>Apt. 012</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-orange dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    SHIPPING
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-grey">
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id="">Daisy Reynolds</td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p>Lorem ipsum.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                            <div class="product-list">
+                                <p>Nam porttito.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>$2,800</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>38 Juston Islands
+                            <br>Apt. 012</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-orange dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    SHIPPING
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id="">
+                            <s>Daisy Reynolds</s>
+                        </td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p>
+                                    <s>Mauris non.</s>
+                                </p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">
+                                        <s>$1,400</s>
+                                    </span>
+                                    <span>
+                                        <s>1</s>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="product-list">
+                                <p>Vestibulum.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">
+                                        <s>$1,400</s>
+                                    </span>
+                                    <span>
+                                        <s>1</s>
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>
+                            <s>$2,800</s>
+                        </td>
+                        <td>
+                            <s>2018/6/8</s>
+                            <br>
+                            <s>13:39</s>
+                        </td>
+                        <td>
+                            <s>2018/6/8</s>
+                            <br>
+                            <s>13:39</s>
+                        </td>
+                        <td><s>386 Windler Drives</s>
+                            <br><s>Apt. 358</s></td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    DONE
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bg-grey">
+                        <td class="td-customer">
+                            <input class="td-checkbox" type="checkbox" name="" id="">Daisy Reynolds</td>
+                        <td>
+                            <div class="product-list border-bottom border-white">
+                                <p>Curabitur lo.</p>
+                                <p class="mb-2 d-flex justify-content-between">
+                                    <span class="product-money">$1,400</span>
+                                    <span>1</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>$1,400</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>2018/6/8
+                            <br>13:39</td>
+                        <td>38 Juston Islands
+                            <br>Apt. 012</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    UNPAID
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Paid</a>
+                                    <a class="dropdown-item" href="#">Unpaid</a>
+                                    <a class="dropdown-item" href="#">Shipping</a>
+                                    <a class="dropdown-item" href="#">Done</a>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination float-right">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
         </div>
-    </div>
-</body>
-
-</html>

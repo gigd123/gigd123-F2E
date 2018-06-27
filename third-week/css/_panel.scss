@@ -19,6 +19,18 @@ $grey5:#757575;
 .blue{
     color: $blue;
 }
+.bg-grey{
+    background-color: #EBEBEB;
+}
+.bg-green{
+    background-color: $green;
+}
+.bg-blue{
+    background-color: $blue;
+}
+.bg-orange{
+    background-color: $orange;
+}
 
 @mixin panel{
     background-color: #fff;
