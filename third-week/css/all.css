@@ -70,12 +70,20 @@ a:hover {
   color: #D0021B;
 }
 
+.grey4 {
+  color: #9B9B9B;
+}
+
 .blue {
   color: #4A90E2;
 }
 
 .bg-grey {
   background-color: #EBEBEB;
+}
+
+.bg-grey4 {
+  background-color: #9B9B9B;
 }
 
 .bg-green {
@@ -140,6 +148,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .title-dateBox #dropdownMenuButton {
   background-color: rgba(255, 255, 255, 0);
   color: #9B9B9B;
+  border: none;
 }
 
 .title-dateBox .dropdown-menu {
@@ -354,6 +363,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0);
   font-size: 0.9rem;
   font-weight: 700;
+  border: none;
 }
 
 .orders .selecBar .dropdown-menu {
@@ -433,43 +443,43 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 /*order.html end*/
 /*product.html start*/
 /*selectBar*/
-.orders {
+.product {
   /*order-table*/
 }
 
-.orders .selecBar .state-select {
+.product .selecBar .state-select {
   position: relative;
 }
 
-.orders .selecBar .state-select input {
+.product .selecBar .state-select input {
   width: 15px;
   height: 15px;
 }
 
-.orders .selecBar .state-select a .fa-sort-down {
+.product .selecBar .state-select a .fa-sort-down {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.orders .selecBar .state-select a .fa-sort-down::before {
+.product .selecBar .state-select a .fa-sort-down::before {
   position: absolute;
   top: 2px;
 }
 
-.orders .selecBar .state-select .fa-tags {
+.product .selecBar .state-select .fa-tags {
   position: relative;
   width: 20px;
   height: 20px;
 }
 
-.orders .selecBar .state-select .fa-tags::before {
+.product .selecBar .state-select .fa-tags::before {
   position: absolute;
   top: 60%;
   transform: translateY(-50%);
 }
 
-.orders .selecBar .state-select .state-select-dropdown {
+.product .selecBar .state-select .state-select-dropdown {
   position: absolute;
   max-height: 0;
   overflow: hidden;
@@ -477,7 +487,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   z-index: 2;
 }
 
-.orders .selecBar .state-select .state-select-dropdown li a {
+.product .selecBar .state-select .state-select-dropdown li a {
   background-color: #fff;
   display: block;
   height: 36px;
@@ -487,94 +497,106 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: #000;
 }
 
-.orders .selecBar .state-select .state-select-dropdown li a:hover {
+.product .selecBar .state-select .state-select-dropdown li a:hover {
   background-color: #000;
   color: #fff;
 }
 
-.orders .selecBar .state-select:hover .state-select-dropdown {
+.product .selecBar .btn.btn-primary {
+  font-size: 0.9rem;
+}
+
+.product .selecBar .state-select:hover .state-select-dropdown {
   max-height: 600px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0px 0px 10px 5px #dfdfdf;
 }
 
-.orders .selecBar #dropdownMenuButton {
-  font-size: 0.9rem;
-  font-weight: 700;
+.product .product-table {
+  width: 100%;
 }
 
-.orders .selecBar .dropdown-menu {
-  min-width: 1rem;
-  left: -50% !important;
-  padding: 0;
+.product .product-table tr th:nth-child(0n+1), .product .product-table tr td:nth-child(0n+1) {
+  padding: 0.7rem 2rem;
 }
 
-.orders .selecBar .dropdown-menu .dropdown-item {
-  padding: 1rem 2.25rem;
-}
-
-.orders .selecBar .dropdown-menu .dropdown-item:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.orders .selecBar .dropdown-toggle::after {
-  display: none;
-}
-
-.orders .order-table tr th, .orders .order-table tr td {
-  padding: 0.7rem 1.5rem;
+.product .product-table tr th, .product .product-table tr td {
+  padding: 0.7rem 0;
   line-height: 1.5;
+  vertical-align: top;
 }
 
-.orders .order-table tr th .product-money, .orders .order-table tr td .product-money {
+.product .product-table tr th.product-price, .product .product-table tr th.product-inventory, .product .product-table tr td.product-price, .product .product-table tr td.product-inventory {
+  text-align: right;
+}
+
+.product .product-table tr th span, .product .product-table tr td span {
+  display: block;
+}
+
+.product .product-table tr th span.product-size, .product .product-table tr td span.product-size {
+  width: 30%;
+}
+
+.product .product-table tr th span.product-color, .product .product-table tr td span.product-color {
+  width: 29%;
+}
+
+.product .product-table tr th span.product-inventory, .product .product-table tr td span.product-inventory {
+  text-align: right;
+  width: 41%;
+}
+
+.product .product-table tr th .product-img, .product .product-table tr td .product-img {
+  width: 50px;
+  height: 50px;
+}
+
+.product .product-table tr th .product-money, .product .product-table tr td .product-money {
   color: #9B9B9B;
 }
 
-.orders .order-table tr th #dropdownMenuButton, .orders .order-table tr td #dropdownMenuButton {
+.product .product-table tr th .dropdown, .product .product-table tr td .dropdown {
+  bottom: 24px;
+}
+
+.product .product-table tr th .dropdown #dropdownMenuButton, .product .product-table tr td .dropdown #dropdownMenuButton {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 0.5rem 1rem;
   border: none;
 }
 
-.orders .order-table tr th .dropdown-menu, .orders .order-table tr td .dropdown-menu {
+.product .product-table tr th .dropdown .dropdown-menu, .product .product-table tr td .dropdown .dropdown-menu {
   min-width: 1rem;
   padding: 0;
   text-align: center;
 }
 
-.orders .order-table tr th .dropdown-menu .dropdown-item, .orders .order-table tr td .dropdown-menu .dropdown-item {
+.product .product-table tr th .dropdown .dropdown-menu .dropdown-item, .product .product-table tr td .dropdown .dropdown-menu .dropdown-item {
   padding: 0.5rem 2rem;
   color: #000;
 }
 
-.orders .order-table tr th .dropdown-menu .dropdown-item:hover, .orders .order-table tr td .dropdown-menu .dropdown-item:hover {
+.product .product-table tr th .dropdown .dropdown-menu .dropdown-item:hover, .product .product-table tr td .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #000;
   color: #fff;
 }
 
-.orders .order-table tr th .dropdown-toggle::after, .orders .order-table tr td .dropdown-toggle::after {
+.product .product-table tr th .dropdown .dropdown-toggle::after, .product .product-table tr td .dropdown .dropdown-toggle::after {
   color: white;
 }
 
-.orders .order-table tr .td-customer {
+.product .product-table tr .td-customer {
   position: relative;
 }
 
-.orders .order-table tr .td-customer .td-checkbox {
+.product .product-table tr .td-customer .td-checkbox {
   position: absolute;
+  width: 15px;
+  height: 15px;
   left: 10px;
-  top: 22px;
-}
-
-.orders nav ul li .page-link {
-  color: #000;
-}
-
-.orders nav ul li .page-link:hover {
-  background-color: #000;
-  color: #fff;
+  top: 18px;
 }
 /*# sourceMappingURL=all.css.map */

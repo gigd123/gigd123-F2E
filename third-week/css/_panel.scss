@@ -16,11 +16,17 @@ $grey5:#757575;
 .red{
     color: $red;
 }
+.grey4{
+    color: $grey4;
+}
 .blue{
     color: $blue;
 }
 .bg-grey{
     background-color: #EBEBEB;
+}
+.bg-grey4{
+    background-color: $grey4;
 }
 .bg-green{
     background-color: $green;
@@ -31,6 +37,7 @@ $grey5:#757575;
 .bg-orange{
     background-color: $orange;
 }
+
 
 @mixin panel{
     background-color: #fff;

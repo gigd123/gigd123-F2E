@@ -49,6 +49,7 @@ header {
     #dropdownMenuButton {
         background-color: rgba(255, 255, 255, 0);
         color: $grey4;
+        border: none;
     }
     .dropdown-menu {
         min-width: 1rem;
@@ -230,6 +231,7 @@ header {
             background-color: rgba(255, 255, 255, 0);
             font-size: 0.9rem;
             font-weight: 700;
+            border: none;
         }
         .dropdown-menu {
             min-width: 1rem;
@@ -304,7 +306,7 @@ header {
 
 /*product.html start*/
 /*selectBar*/ 
-.orders{
+.product{
     .selecBar{
         .state-select{
             position: relative;
@@ -355,62 +357,74 @@ header {
                 }
             }
         }
+        .btn.btn-primary{
+            font-size: 0.9rem;
+        }
         .state-select:hover{
             .state-select-dropdown{
                 max-height: 600px;
                 @include panel;
             }
         }
-        #dropdownMenuButton {
-            font-size: 0.9rem;
-            font-weight: 700;
-        }
-        .dropdown-menu {
-            min-width: 1rem;
-            left: -50% !important;
-            padding: 0;
-            .dropdown-item {
-                padding: 1rem 2.25rem;
-            }
-            .dropdown-item:hover {
-                background-color: #000;
-                color: #fff;
-            }
-        }
-        .dropdown-toggle::after {
-            display: none;
-        }
     }
     /*order-table*/
-    .order-table{
+    .product-table{
+        width: 100%;
         tr{
+            th:nth-child(0n+1), td:nth-child(0n+1){
+                padding: 0.7rem 2rem;
+            }
             th,td{
-                padding: 0.7rem 1.5rem;
+                padding: 0.7rem 0;
                 line-height: 1.5;
+                vertical-align: top;
+                &.product-price, &.product-inventory{
+                    text-align: right;
+                }
+                span{
+                    display: block;
+                    &.product-size{
+                        width:30%;
+                    }
+                    &.product-color{
+                        width:29%;
+                    }
+                    &.product-inventory{
+                        text-align: right;
+                        width: 41%;
+                    }
+                }
+                .product-img{
+                    width: 50px;
+                    height: 50px;
+                }
                 .product-money{
                     color: $grey4;
                 }
-                #dropdownMenuButton {
-                    font-size: 0.9rem;
-                    font-weight: 700;
-                    padding: 0.5rem 1rem;
-                    border: none;
-                }
-                .dropdown-menu {
-                    min-width: 1rem;
-                    padding: 0;
-                    text-align: center;
-                    .dropdown-item {
-                        padding: 0.5rem 2rem;
-                        color: #000;
+                .dropdown{
+                    bottom: 24px;
+                    #dropdownMenuButton {
+                        font-size: 0.9rem;
+                        font-weight: 700;
+                        padding: 0.5rem 1rem;
+                        border: none;
                     }
-                    .dropdown-item:hover {
-                        background-color: #000;
-                        color: #fff;
+                    .dropdown-menu {
+                        min-width: 1rem;
+                        padding: 0;
+                        text-align: center;
+                        .dropdown-item {
+                            padding: 0.5rem 2rem;
+                            color: #000;
+                        }
+                        .dropdown-item:hover {
+                            background-color: #000;
+                            color: #fff;
+                        }
                     }
-                }
-                .dropdown-toggle::after {
-                    color: rgb(255, 255, 255);
+                    .dropdown-toggle::after {
+                        color: rgb(255, 255, 255);
+                    }
                 }
             }
     
@@ -418,19 +432,12 @@ header {
                 position: relative;
                .td-checkbox{
                   position: absolute;
+                  width: 15px;
+                  height: 15px;
                   left: 10px;
-                  top: 22px; 
+                  top: 18px; 
                } 
             }
         } 
-    }
-    nav{
-        ul li .page-link{
-            color: #000;
-        }
-        ul li .page-link:hover{
-            background-color: #000;
-            color: #fff;
-        }
     }
 }
